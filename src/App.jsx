@@ -7,7 +7,7 @@ import { useState } from "react";
 import { MdDarkMode, MdLightMode  } from "react-icons/md";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="relative">
       <button title={`Toggle ${darkMode ? 'lightmode' : 'darkmode'}`} className="absolute bg-white rounded-full top-3 right-5 text-3xl max-md:text-2xl max-sm:text-xl p-2 cursor-pointer transition-all duration-300 ease-in-out" onClick={() => {
