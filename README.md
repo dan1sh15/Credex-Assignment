@@ -65,7 +65,7 @@ A toggle button lets users switch between light and dark themes. Tailwind's `dar
 ## 📦 Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/softsell-website.git
+git clone https://github.com/dan1sh15/Credex-Assignment.git
 cd softsell-website
 npm install
 npm run dev
