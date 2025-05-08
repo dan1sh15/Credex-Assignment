@@ -10,3 +10,63 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# SoftSell - Responsive Marketing Website
+
+A single-page responsive marketing website for the fictional company **SoftSell**, built as part of the Credex Web Development Internship assignment.
+
+---
+
+## 🚀 Features Implemented
+
+### 🔧 Components Built (Using React + Tailwind CSS)
+
+- **Hero Section**  
+  Catchy headline, subheading, and CTA button.
+
+- **How It Works**  
+  A 3-step visual flow with icons: Upload License → Get Valuation → Get Paid.
+
+- **Why Choose Us**  
+  3–4 tiles with icons and short descriptions to highlight advantages.
+
+- **Customer Testimonials**  
+  Swiper slider with 5 dummy reviews, responsive and animated.
+
+- **Contact Form**  
+  Fully validated form with name, email, company, license type (dropdown), and message. Form reset after submission.
+
+- **Dark Mode Toggle**  
+  Implemented dark/light theme switch using Tailwind's `dark:` classes and React `useState`.
+
+- **Bonus: UI Polish**
+  - Responsive design (mobile-first)
+  - Gradient backgrounds and modern UI
+  - Font and color consistency
+  - Smooth animations (basic Tailwind + Swiper transitions)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React.js (via Vite)
+- **Styling**: Tailwind CSS
+- **Carousel**: SwiperJS
+- **Hosting**: [Vercel / Netlify / GitHub Pages] *(Add yours here)*
+
+---
+
+## 🌗 Dark Mode
+
+A toggle button lets users switch between light and dark themes. Tailwind's `dark` variant is used throughout components for seamless styling.
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+git clone https://github.com/your-username/softsell-website.git
+cd softsell-website
+npm install
+npm run dev
+

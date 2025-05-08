@@ -1,5 +1,5 @@
-const HeroSection = () => (
-    <section className="text-center py-20 bg-gradient-to-b from-blue-400 to-indigo-700 text-white h-[50vh] flex flex-col items-center justify-center max-md:text-sm">
+const HeroSection = ({ darkMode }) => (
+    <section className={`text-center py-20 ${darkMode ? 'bg-gradient-to-b from-blue-900 to-indigo-900' : 'bg-gradient-to-b from-blue-400 to-indigo-700'} text-white h-[50vh] flex flex-col items-center justify-center max-md:text-sm`}>
         <h1 className="text-4xl font-bold mb-4 max-md:text-3xl">Sell Your Unused Software Licenses with SoftSell</h1>
         <p className="mb-6 text-lg max-md:text-sm">Get instant valuation and quick payment for your unused licenses.</p>
         <button onClick={() => {

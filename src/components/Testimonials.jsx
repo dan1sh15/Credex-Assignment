@@ -12,8 +12,8 @@ const reviews = [
   { name: "Carlos Gomez", role: "Operations Lead", company: "InnoTech", review: "Quick valuation and instant payout, loved the experience." },
 ];
 
-const Testimonials = () => (
-  <section className="py-16 bg-gray-50 text-center">
+const Testimonials = ({ darkMode }) => (
+  <section className={`py-16 bg-gray-50 text-center ${darkMode && 'bg-gray-900 text-white'}`}>
     <h2 className="text-3xl font-bold mb-10 max-md:text-2xl">What Our Customers Say</h2>
     <div className="max-w-4xl mx-auto px-4">
       <Swiper
@@ -31,11 +31,11 @@ const Testimonials = () => (
       >
         {reviews.map((r, idx) => (
           <SwiperSlide key={idx}>
-            <div className="bg-white p-6 rounded-lg shadow-lg h-full flex flex-col justify-between">
-              <p className="italic text-gray-700 mb-4">"{r.review}"</p>
+            <div className={` ${darkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg shadow-lg h-full flex flex-col justify-between`}>
+              <p className={`italic ${darkMode ? 'text-gray-200' : 'text-gray-700'} mb-4`}>"{r.review}"</p>
               <div className="mt-auto">
                 <div className="font-bold">{r.name}</div>
-                <div className="text-sm text-gray-600">{r.role} @ {r.company}</div>
+                <div className={`text-sm ${darkMode ? 'text-gray-200' : 'text-gray-700'}`}>{r.role} @ {r.company}</div>
               </div>
             </div>
           </SwiperSlide>
